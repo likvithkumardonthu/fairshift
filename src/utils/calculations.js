@@ -22,9 +22,9 @@ export function calculatePay(hoursWorked, baseHourlyRate = 120, otMultiplier = 1
   const netPay = Math.max(0, grossPay - deductions);
 
   return {
-    hoursWorked: Number(safeHours.toFixed(1)),
-    standardHours: Number(standardHours.toFixed(1)),
-    overtimeHours: Number(overtimeHours.toFixed(1)),
+    hoursWorked: Number(safeHours.toFixed(2)),
+    standardHours: Number(standardHours.toFixed(2)),
+    overtimeHours: Number(overtimeHours.toFixed(2)),
     standardPay,
     overtimePay,
     grossPay,
